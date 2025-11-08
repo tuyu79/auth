@@ -1,5 +1,5 @@
 do $$ begin
-  create type one_time_token_type as enum (
+  create type {{ index .Options "Namespace" }}.one_time_token_type as enum (
     'confirmation_token',
     'reauthentication_token',
     'recovery_token',
